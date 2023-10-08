@@ -1,14 +1,15 @@
 ---
-title: 'Data Analytics Dashboard'
-excerpt: 'Creating a data analytics dashboard that R&D engineers use to optimize polymer design.'
-coverImage: '/assets/blog/data-analysis/data-analysis-cover.png'
-date: 'Matmerize'
-# client: 'Matmerize'
+title: 'KU.BE Booking'
+excerpt: 'Collaborating with the administrators of a Danish culture house to collectively design a new room booking system.'
+coverImage: '/assets/blog/cover-images/kube-cover.png'
+date: 'KU.BE Culture House'
+# client: 'KU.BE Culture House'
 author:
-  name: Tim Neutkens
-  picture: '/assets/blog/authors/tim.jpeg'
+  name: Joe Haddad
+  picture: '/assets/blog/authors/joe.jpeg'
 ogImage:
-  url: '/assets/blog/data-analysis/data-analysis-cover.png'
+  url: '/assets/blog/cover-images/kube-cover.png'
+subheader: 'While studying abroad in Copenhagen, I engaged in a participatory design process with stakeholders from KU.BE, a local culture house. I held three workshops with the stakeholders and together we created a prototype of a new booking system for KU.BE.'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.

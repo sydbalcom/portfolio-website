@@ -1,32 +1,46 @@
-import Avatar from './avatar'
-import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
 import PostTitle from './post-title'
-import type Author from '../interfaces/author'
+import Image from 'next/image'
 
 type Props = {
   title: string
   coverImage: string
   date: string
-  author: Author
+  subheader: string
+  // author: Author
 }
 
-const PostHeader = ({ title, coverImage, date, author }: Props) => {
+const PostHeader = ({ title, coverImage, date, subheader}: Props) => {
   return (
     <>
-      <PostTitle>{title}</PostTitle>
-      <div className="hidden md:block md:mb-12">
-        <Avatar name={author.name} picture={author.picture} />
+      <div className="absolute -top-20 -left-20 -z-10 w-3/5 md:w-1/2 lg:w-1/3">
+        <Image
+          src={'/assets/blog/intro/tiered-flower.png'}
+          alt={'Flower'}
+          width={700}
+          height={700}
+          />
       </div>
-      <div className="mb-8 md:mb-16 sm:mx-0">
-        <CoverImage title={title} src={coverImage} />
-      </div>
-      <div className="max-w-2xl mx-auto">
-        <div className="block md:hidden mb-6">
-          <Avatar name={author.name} picture={author.picture} />
+      <div className="mx-8">
+        <PostTitle>{title}</PostTitle>
+        <div className="text-3xl md:text-4xl lg:text-5xl italic font-medium mb-4 md:mb-6 lg:mb-10">
+          {date}
         </div>
-        <div className="mb-6 text-lg">
-          <DateFormatter dateString={date} />
+        <div className="mb-8 md:mb-16" id="coverMedia">
+          <div className="text-xl md:text-2xl mb-4 md:mb-6 lg:mb-10">
+            {subheader}
+          </div>
+          {(title != "Hostility Towards LGBT People in the EU") && 
+          <CoverImage title={title} src={coverImage} />}
+
+          {(title == "Hostility Towards LGBT People in the EU") && 
+          <div className="w-full">
+            <iframe 
+              src="https://sydbalcom.github.io/Info-Vis-final-project/final-project/test/"
+              className="w-[100%] h-[60rem] scale-85">
+            </iframe>
+          </div>}
+
         </div>
       </div>
     </>

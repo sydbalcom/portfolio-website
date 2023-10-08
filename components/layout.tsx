@@ -11,7 +11,7 @@ const Layout = ({ preview, children }: Props) => {
   return (
     <>
       <Meta />
-      <div className="min-h-screen bg-[#F9F9F9] text-stone-800 font-['Open_Sauce_Two']">
+      <div className="min-h-screen text-stone-800 font-['Open_Sauce_Two']">
         {/* <Alert preview={preview} /> */}
         <main>{children}</main>
       </div>

@@ -6,10 +6,12 @@ type PostType = {
   date: string
   coverImage: string
   author: Author
+  client: string
   excerpt: string
   ogImage: {
     url: string
   }
+  subheader: string
   content: string
 }
 
