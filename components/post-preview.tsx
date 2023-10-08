@@ -1,8 +1,5 @@
-// import Avatar from './avatar'
-// import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
 import Link from 'next/link'
-// import type Author from '../interfaces/author'
 
 type Props = {
   title: string
@@ -19,7 +16,6 @@ const PostPreview = ({
   date,
   excerpt,
   slug,
-  // client,
 }: Props) => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 bg-[#EFEFEF] p-10 rounded-xl items-center">
