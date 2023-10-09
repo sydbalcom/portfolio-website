@@ -23,7 +23,7 @@ const PostPreview = ({
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>
       <div>
-        <h3 className="text-3xl font-semibold mb-1 leading-snug">
+        <h3 className="text-3xl font-openSauceBold mb-1 leading-snug">
           <Link
             as={`/posts/${slug}`}
             href="/posts/[slug]"
@@ -32,7 +32,7 @@ const PostPreview = ({
             {title}
           </Link>
         </h3>
-        <div className="text-xl italic font-medium mb-4">
+        <div className="text-xl italic font-openSauceMed mb-4">
           {date}
         </div>
         <p className="text-xl leading-relaxed">{excerpt}</p>

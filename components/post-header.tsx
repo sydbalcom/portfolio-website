@@ -6,11 +6,10 @@ type Props = {
   title: string
   coverImage: string
   date: string
-  subheader: string
-  // author: Author
+  excerpt: string
 }
 
-const PostHeader = ({ title, coverImage, date, subheader}: Props) => {
+const PostHeader = ({ title, coverImage, date, excerpt}: Props) => {
   return (
     <>
       <div className="absolute -top-20 -left-20 -z-10 w-3/5 md:w-1/2 lg:w-1/3">
@@ -23,12 +22,12 @@ const PostHeader = ({ title, coverImage, date, subheader}: Props) => {
       </div>
       <div className="mx-8">
         <PostTitle>{title}</PostTitle>
-        <div className="text-3xl md:text-4xl lg:text-5xl italic font-medium mb-4 md:mb-6 lg:mb-10">
+        <div className="text-2xl md:text-3xl lg:text-4xl italic font-openSauceMed mb-4 md:mb-6">
           {date}
         </div>
         <div className="mb-8 md:mb-16" id="coverMedia">
           <div className="text-xl md:text-2xl mb-4 md:mb-6 lg:mb-10">
-            {subheader}
+            {excerpt}
           </div>
           {(title != "Hostility Towards LGBT People in the EU") && 
           <CoverImage title={title} src={coverImage} />}

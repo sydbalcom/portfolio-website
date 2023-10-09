@@ -42,17 +42,17 @@ export default function Post({ post, morePosts, preview }: Props) {
                 title={post.title}
                 coverImage={post.coverImage}
                 date={post.date}
-                subheader={post.subheader}
+                excerpt={post.excerpt}
               />
               <PostBody content={post.content} />
-              <div className="absolute bottom-40 md:-bottom-10 lg:-bottom-1/3 xl:-bottom-1/2 -right-20 -z-10 w-3/5 md:w-1/2 lg:w-1/3">
+              {/* <div className="absolute bottom-40 md:-bottom-10 lg:-bottom-1/3 xl:-bottom-1/2 -right-20 -z-10 w-3/5 md:w-1/2 lg:w-1/3">
               <Image
                 src={'/assets/blog/intro/tiered-flower.png'}
                 alt={'Flower'}
                 width={700}
                 height={700}
                 />
-            </div>
+              </div> */}
             </article>
           </>
         )}
@@ -76,7 +76,7 @@ export async function getStaticProps({ params }: Params) {
     'content',
     'ogImage',
     'coverImage',
-    'subheader',
+    'excerpt',
   ])
   const content = await markdownToHtml(post.content || '')
 

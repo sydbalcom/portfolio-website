@@ -6,3 +6,13 @@
     font-family: "Open Sauce Two";
     src: url("../public/assets/blog/fonts/OpenSauceTwo-Regular.ttf");
 }
+
+@font-face {
+    font-family: "Open Sauce Two Medium";
+    src: url("../public/assets/blog/fonts/OpenSauceTwo-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Open Sauce Two Bold";
+    src: url("../public/assets/blog/fonts/OpenSauceTwo-Bold.ttf");
+}

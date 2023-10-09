@@ -30,7 +30,9 @@ module.exports = {
         md: '0 8px 30px rgba(0, 0, 0, 0.12)',
       },
       fontFamily: {
-        openSauce: ["Open Sauce Two", "sans-serif"]
+        openSauce: ["Open Sauce Two", "sans-serif"],
+        openSauceMed: ["Open Sauce Two Medium", "sans-serif"],
+        openSauceBold: ["Open Sauce Two Bold", "sans-serif"],
       },
     },
   },

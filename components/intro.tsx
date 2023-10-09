@@ -18,8 +18,8 @@ const Intro = () => {
         <div className="basis-3/4 lg:basis-5/6 pt-16">
           <div className="flex flex-row gap-6">
             <div>
-              <p className="text-3xl md:text-6xl mb-1 md:mb-2 font-medium font-style: italic">Hey, I'm</p>
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight md:pr-8">
+              <p className="text-3xl md:text-6xl mb-1 md:mb-2 font-openSauceMed font-style: italic">Hey, I'm</p>
+              <h1 className="text-5xl md:text-7xl font-openSauceBold tracking-tighter leading-tight md:pr-8">
                 SYDNEY<br></br>BALCOM
               </h1>
             </div>
