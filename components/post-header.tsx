@@ -12,7 +12,8 @@ type Props = {
 const PostHeader = ({ title, coverImage, date, excerpt}: Props) => {
   return (
     <>
-      <div className="absolute -top-20 -left-20 -z-10 w-3/5 md:w-1/2 lg:w-1/3">
+      <div className="absolute scale-150 left-1/2 -translate-x-1/2 -translate-y-44 sm:scale-100
+      sm:-top-20 sm:-left-20 sm:translate-x-0 sm:translate-y-0 -z-10 w-3/5 md:w-1/2 lg:w-1/3">
         <Image
           src={'/assets/blog/intro/tiered-flower.png'}
           alt={'Flower'}

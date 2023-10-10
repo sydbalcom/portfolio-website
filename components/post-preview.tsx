@@ -35,7 +35,7 @@ const PostPreview = ({
         <div className="text-xl italic font-openSauceMed mb-4">
           {date}
         </div>
-        <p className="text-xl leading-relaxed">{excerpt}</p>
+        <p className="text-lg md:text-xl leading-relaxed">{excerpt}</p>
       </div>
     </div>
   )
