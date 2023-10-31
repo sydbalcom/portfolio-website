@@ -33,6 +33,7 @@ module.exports = {
         openSauce: ["Open Sauce Two", "sans-serif"],
         openSauceMed: ["Open Sauce Two Medium", "sans-serif"],
         openSauceBold: ["Open Sauce Two Bold", "sans-serif"],
+        pilowLava: ["Pilowlava", "sans-serif"],
       },
     },
   },

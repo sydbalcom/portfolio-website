@@ -17,8 +17,13 @@ const Intro = () => {
         <div className="w-fit">
           <p className="text-4xl md:text-6xl mb-1 md:mb-2 font-openSauceMed font-style: italic">Hey, I'm</p>
           <h1 className="text-6xl md:text-7xl font-openSauceBold tracking-tighter leading-tight md:pr-8">
-            SYDNEY<br></br>BALCOM
+            <span className="font-pilowLava">S</span><span>YDNEY</span>
+            <br></br>
+            <span className="font-pilowLava">B</span><span>ALCOM</span>
           </h1>
+          {/* <h1 className="text-6xl md:text-7xl font-pilowLava tracking-tighter leading-tight md:pr-8">
+            SYDNEY<br></br>BALCOM
+          </h1> */}
         <div className="absolute left-10 bg-[#EFEFEF] rounded-l-full w-full"></div>
         </div>
         <div className="mt-4 text-lg sm:text-xl md:text-2xl lg:text-3xl w-10/12 xl:w-8/12">
