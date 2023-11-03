@@ -7,19 +7,19 @@ const Meta = () => {
       <link
         rel="apple-touch-icon"
         sizes="180x180"
-        href="public/favicon/logo-whimsy.png"
+        href="ppublic/favicon/favicon.ico"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href="public/favicon/logo-whimsy.png"
+        href="public/favicon/favicon.ico"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href="public/favicon/logo-whimsy.png"
+        href="public/favicon/favicon.ico"
       />
       {/* <link rel="manifest" href="/favicon/site.webmanifest" />
       <link
