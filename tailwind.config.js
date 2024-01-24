@@ -34,6 +34,7 @@ module.exports = {
         openSauceMed: ["Open Sauce Two Medium", "sans-serif"],
         openSauceBold: ["Open Sauce Two Bold", "sans-serif"],
         pilowLava: ["Pilowlava", "sans-serif"],
+        cosmicaBold: ["Cosmica Mono Bold", "sans-serif"],
       },
     },
   },

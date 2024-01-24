@@ -21,3 +21,8 @@
     font-family: "Pilowlava";
     src: url("../public/assets/blog/fonts/Pilowlava-Regular.otf")
 }
+
+@font-face {
+    font-family: "Cosmica Mono Bold";
+    src: url("../public/assets/blog/fonts/CosmicaMonoTrial-Bold.ttf")
+}
