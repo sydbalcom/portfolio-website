@@ -1,32 +1,6 @@
 import { CMS_NAME } from '../lib/constants'
 import Image from 'next/image'
-import {useState, useCallback, useEffect} from 'react'
-
-const useMediaQuery = (width) => {
-  const [targetReached, setTargetReached] = useState(false);
-
-  const updateTarget = useCallback((e) => {
-    if (e.matches) {
-      setTargetReached(true);
-    } else {
-      setTargetReached(false);
-    }
-  }, []);
-
-  useEffect(() => {
-    const media = window.matchMedia(`(max-width: ${width}px)`);
-    media.addListener(updateTarget);
-
-    // Check on mount (callback is not called until a change occurs)
-    if (media.matches) {
-      setTargetReached(true);
-    }
-
-    return () => media.removeListener(updateTarget);
-  }, []);
-
-  return targetReached;
-};
+import FlowerLogo from './flower-logo';
 
 const Intro = () => {
   return (
@@ -42,12 +16,16 @@ const Intro = () => {
       </div>
       <div className="mb-12 mx-12 pt-16 flex flex-col items-center">
         <div className="w-fit">
-          <p className="text-4xl mb-1 md:mb-2 font-openSauceBold font-style: italic">Hey, I'm</p>
-          <h1 className="text-7xl font-openSauceBold tracking-tighter leading-tight md:pr-8">
-            <span className="font-cosmicaBold">SYD</span>
-            {useMediaQuery(960) && <br></br>}
-            {!useMediaQuery(960) && " "}
-            <span className="font-cosmicaBold">BALCOM</span>
+          <p className="text-4xl mb-4 md:mb-5 font-openSauceBold font-style: italic">Hey, I'm</p>
+          <h1 className="text-7xl font-cosmicaBold tracking-tighter leading-tight md:pr-8">
+            <span className="flex inline-flex gap-x-6 mr-6">
+              SYD
+              <FlowerLogo
+                fillColor='#295092'
+                width='80'
+              />
+            </span>
+            <span>BALCOM</span>
           </h1>
         </div>
       </div>
