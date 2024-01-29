@@ -6,6 +6,8 @@ import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
 import Post from '../interfaces/post'
+import SiteSection from '../components/site-sections'
+import SBLogo from '../components/sb-logo'
 
 type Props = {
   allPosts: Post[]
@@ -21,8 +23,12 @@ export default function Index({ allPosts }: Props) {
           <title>{`Sydney Balcom`}</title>
         </Head>
         <Container>
+          <SBLogo />
           <Intro />
+          <SiteSection name="About" />
+          <SiteSection name="Work" />
           {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
+          <SiteSection name="Play" />
         </Container>
       </Layout>
     </>
