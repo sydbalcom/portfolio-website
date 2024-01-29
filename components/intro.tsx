@@ -18,12 +18,10 @@ const Intro = () => {
           <h1 className="text-7xl font-cosmicaBold tracking-tighter leading-tight md:pr-8">
             <span className="flex inline-flex items-center gap-x-5 mr-6">
               SYD
-              <span className="rotate-45">
-                <FlowerLogo
-                  fillColor='#295092'
-                  width='75'
-                />
-              </span>
+              <FlowerLogo
+                fillColor='#295092'
+                width='75'
+              />
             </span>
             <span>BALCOM</span>
           </h1>
