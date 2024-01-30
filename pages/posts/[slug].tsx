@@ -12,6 +12,7 @@ import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 import type PostType from '../../interfaces/post'
 import Image from 'next/image'
+import NavBar from '../../components/nav-bar'
 
 type Props = {
   post: PostType
@@ -28,12 +29,12 @@ export default function Post({ post, morePosts, preview }: Props) {
   return (
     <Layout preview={preview}>
       <Container>
-        <Header />
+        <NavBar navItems={[]} />
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article className="mb-32">
+            <article className="mb-32 mt-20">
               <Head>
                 <title>{title}</title>
                 <meta property="og:image" content={post.ogImage.url} />
