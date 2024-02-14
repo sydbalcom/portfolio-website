@@ -9,6 +9,7 @@ import Post from '../interfaces/post'
 import SiteSection from '../components/site-sections'
 import SBLogo from '../components/sb-logo'
 import NavBar from '../components/nav-bar'
+import About from '../components/about'
 
 type Props = {
   allPosts: Post[]
@@ -27,6 +28,7 @@ export default function Index({ allPosts }: Props) {
           <NavBar navItems={[]} />
           <Intro />
           <SiteSection name="About" />
+          <About />
           <SiteSection name="Work" />
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
           <SiteSection name="Play" />
