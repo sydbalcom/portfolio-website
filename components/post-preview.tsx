@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import CoverImage from './cover-image'
 import Link from 'next/link'
 
@@ -17,26 +18,26 @@ const PostPreview = ({
   excerpt,
   slug,
 }: Props) => {
+  const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 bg-[#EFEFEF] p-10 rounded-xl items-center">
-      <div>
-        <CoverImage slug={slug} title={title} src={coverImage} />
-      </div>
-      <div>
-        <h3 className="text-3xl font-openSauceBold mb-1 leading-snug">
-          <Link
-            as={`/posts/${slug}`}
-            href="/posts/[slug]"
-            className="hover:underline"
-          >
+    <div className="items-center relative">
+      <CoverImage slug={slug} title={title} src={coverImage} />
+      <a href={"/posts/" + slug} className="z-0 absolute bottom-0 hover:top-0
+        bg-[#E5E5E5] bg-opacity-80 border-2 border-[#6783B1]
+        rounded-b-xl hover:rounded-xl p-4 hover:py-8 w-full hover:h-full
+        transition ease-in-out hover:delay-1000"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <h3 className="text-2xl font-openSauceBold mb-1 leading-snug">
             {title}
-          </Link>
         </h3>
-        <div className="text-xl italic font-openSauceMed mb-4">
+        <div className="text-LG italic font-openSauceMed bg-[#90A4C5] rounded-md
+          w-fit py-1 px-2">
           {date}
         </div>
-        <p className="text-lg md:text-xl leading-relaxed">{excerpt}</p>
-      </div>
+        {isHovered && <p className="text-lg md:text-xl mt-8 leading-relaxed">{excerpt}</p>}
+      </a>
     </div>
   )
 }

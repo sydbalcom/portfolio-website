@@ -1,4 +1,6 @@
-const about_text = 'I have always strived to leave an impact on the communities that I have been a part of.' +
+const about_text = 'About'
+
+const desc = 'I have always strived to leave an impact on the communities that I have been a part of.' +
 ' During my undergrad at Georgia Tech, I learned that I could use design and programming as approaches for enacting change.' +
 " So that's what I did."
 

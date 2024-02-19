@@ -13,7 +13,7 @@ type Props = {
 const PostHeader = ({ title, coverImage, date, excerpt}: Props) => {
   return (
     <>
-      <div className="absolute scale-100 md:scale-125 -z-10 flex flex-col items-end
+      <div className="absolute scale-100 md:scale-125 -z-20 flex flex-col items-end
       w-screen md:-translate-x-1/4 -translate-y-20 md:-translate-y-10
       transition duration-150 ease-in-out">
         <FlowerLogo
