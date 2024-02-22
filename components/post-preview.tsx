@@ -24,8 +24,8 @@ const PostPreview = ({
       <CoverImage slug={slug} title={title} src={coverImage} />
       <a href={"/posts/" + slug} className="z-0 absolute bottom-0 hover:top-0
         bg-[#E5E5E5] bg-opacity-80 border-2 border-[#6783B1]
-        rounded-b-xl hover:rounded-xl p-4 hover:py-8 w-full hover:h-full
-        transition ease-in-out hover:delay-1000"
+        rounded-b-xl hover:rounded-xl p-4 hover:flex hover:flex-col hover:justify-center
+        w-full hover:h-full transition ease-in-out hover:delay-1000"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
