@@ -10,10 +10,8 @@ const Layout = ({ preview, children }: Props) => {
     <>
       <Meta />
       <div className="min-h-screen text-stone-800 font-openSauce">
-        {/* <Alert preview={preview} /> */}
         <main>{children}</main>
       </div>
-      {/* <Footer /> */}
     </>
   )
 }

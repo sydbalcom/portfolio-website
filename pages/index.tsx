@@ -26,12 +26,14 @@ export default function Index({ allPosts }: Props) {
         </Head>
         <Container>
           <NavBar navItems={[]} />
-          <Intro />
-          <SiteSection name="About" />
-          <About />
-          <SiteSection name="Work" />
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-          <SiteSection name="Play" />
+          <div className="mx-6">
+            <Intro />
+            <SiteSection name="About" />
+            <About />
+            <SiteSection name="Work" />
+            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+            <SiteSection name="Play" />
+          </div>
         </Container>
       </Layout>
     </>
