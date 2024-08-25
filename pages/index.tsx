@@ -31,7 +31,7 @@ export default function Index({ allPosts }: Props) {
             <SiteSection name="About" />
             <About />
             <SiteSection name="Work" />
-            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+            {/* {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
             <SiteSection name="Play" />
           </div>
         </Container>
