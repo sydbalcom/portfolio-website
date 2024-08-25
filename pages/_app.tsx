@@ -3,6 +3,7 @@ import { AppCacheProvider } from '@mui/material-nextjs/v13-pagesRouter';
 import '../styles/index.css'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Roboto } from 'next/font/google';
+// import { OpenSauceTwo } from "../assets/blog/fonts/OpenSauceTwo-Regular.ttf";
 
 const roboto = Roboto({
   weight: ['300', '400', '500', '700'],

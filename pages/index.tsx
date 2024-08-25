@@ -10,6 +10,8 @@ import SiteSection from '../components/site-sections'
 import SBLogo from '../components/sb-logo'
 import NavBar from '../components/nav-bar'
 import About from '../components/about'
+import { Accordion, AccordionDetails, AccordionSummary, Typography } from '@mui/material'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 type Props = {
   allPosts: Post[]
@@ -28,11 +30,52 @@ export default function Index({ allPosts }: Props) {
           <NavBar navItems={[]} />
           <div className="mx-6">
             <Intro />
-            <SiteSection name="About" />
-            <About />
-            <SiteSection name="Work" />
-            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-            <SiteSection name="Play" />
+
+            <Accordion defaultExpanded
+              sx={{ backgroundColor: 'transparent', boxShadow: 'none'}}
+            >
+              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                <Typography variant="h5">
+                  About
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography variant="body1" component={'div'}>
+                  <About />
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            <Accordion defaultExpanded
+              sx={{ backgroundColor: 'transparent', boxShadow: 'none'}}
+            >
+              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                <Typography variant="h5">
+                  Work
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+              <Typography variant="body1" component={'div'}>
+                  {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            
+            <Accordion defaultExpanded
+              sx={{ backgroundColor: 'transparent', boxShadow: 'none'}}
+            >
+              <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                <Typography variant="h5">
+                  Play
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+              <Typography variant="body1" component={'div'}>
+                  <About />
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
           </div>
         </Container>
       </Layout>

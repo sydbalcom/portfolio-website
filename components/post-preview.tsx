@@ -1,6 +1,12 @@
 import { useState } from 'react'
 import CoverImage from './cover-image'
 import Link from 'next/link'
+import { Card } from '@mui/material'
+import { CardContent } from '@mui/material'
+import { CardMedia } from '@mui/material'
+import { CardActionArea } from '@mui/material';
+import { Typography } from '@mui/material'
+import { Chip } from '@mui/material'
 
 type Props = {
   title: string
@@ -18,27 +24,27 @@ const PostPreview = ({
   excerpt,
   slug,
 }: Props) => {
+  console.log(coverImage)
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="items-center relative">
-      <CoverImage slug={slug} title={title} src={coverImage} />
-      <a href={"/posts/" + slug} className="z-0 absolute bottom-0 hover:top-0
-        bg-[#E5E5E5] bg-opacity-80 border-2 border-[#6783B1]
-        rounded-b-xl hover:rounded-xl p-4 hover:flex hover:flex-col hover:justify-center
-        w-full hover:h-full transition ease-in-out hover:delay-1000"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
-        <h3 className="text-2xl font-openSauceBold mb-1 leading-snug">
+    <Card variant='outlined'>
+      <CardActionArea href={`/posts/${slug}`}>
+        <CardMedia 
+          sx={{ width: 1, height: 300 }}
+          title={title}
+          image={`${coverImage}`}
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
             {title}
-        </h3>
-        <div className="text-LG italic font-openSauceMed bg-[#90A4C5] rounded-md
-          w-fit py-1 px-2">
-          {date}
-        </div>
-        {isHovered && <p className="text-lg md:text-xl mt-8 leading-relaxed">{excerpt}</p>}
-      </a>
-    </div>
+          </Typography>
+          <Chip label={date} />
+          <Typography variant="body2" color="text.secondary">
+            {excerpt}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
   )
 }
 
