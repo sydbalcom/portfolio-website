@@ -2,7 +2,7 @@
 title: 'Hostility Towards LGBT People in the EU'
 excerpt: 'Developing an interactive visualization that displays the levels of hostility towards LGBT people in different European countries.'
 coverImage: '/assets/blog/info-vis/info-vis-cover.png'
-date: 'Intro to Information Visualization'
+date: 'Data Visualization'
 # client: 'Matmerize'
 author:
   name: Tim Neutkens
